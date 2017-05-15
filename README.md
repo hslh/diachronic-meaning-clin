@@ -14,7 +14,13 @@ Different versions might work just as well, but cannot be guaranteed. Most scrip
 
 In addition, we made use of:
 * The [Elephant](https://github.com/ParallelMeaningBank/elephant) tokenizer
-* The [LASSY](https://www.let.rug.nl/vannoord/Lassy/) Small corpus 
+* The [LASSY](https://www.let.rug.nl/vannoord/Lassy/) Small corpus
+
+## Additional Files
+* `most_frequent_*_5000.txt`: Lists of the 5000 most frequent words/nouns/verbs in LASSY
+* `most_frequent_words_5000_average_similarity.json`: Average similarity in the Trouw and Volkskrant corpora for the 5000 most frequent words in LASSY
+* `word_list_combined.txt`: Initial list of words to investigate (before frequency cut-off)
+* `word_list_combined_results.json`: Counts, frequencies and self-similarities in both corpora for the words in the list above
 
 ## Contact
 E-mail me at hessel.haagsma@rug.nl

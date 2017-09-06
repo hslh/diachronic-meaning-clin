@@ -126,20 +126,20 @@ if args.word:
 	plt.show()
 
 	# Plots for slides/paper
-	# #a30f2d = 35% dark crimson 
-	color_1 = '#a30f2d'
-	# #8db0f2 = 75% dark cornflowerblue
-	color_2 = '#8db0f2'
+	# #5d0919 = 20% dark crimson 
+	color_1 = '#5d0919'
+	# #4781eb = 60% dark cornflowerblue
+	color_2 = '#4781eb'
 	
 	plt.rcParams.update({'font.size': 29})
-	fig = plt.figure(1, figsize=(36,8), tight_layout = True)
-	lines = plt.plot(years, volkskrant_similarity, linestyle='solid', color=color_2, label='Volkskrant', linewidth = 3.5, markeredgewidth = 7.0)
+	fig = plt.figure(1, figsize=(25.58,8), tight_layout = True)
+	lines = plt.plot(years, volkskrant_similarity, linestyle='solid', color=color_2, label='Volkskrant', linewidth = 4.0, markeredgewidth = 7.5)
 	plt.setp(lines, marker = '.')
-	lines = plt.plot(years, trouw_similarity, linestyle='solid', color=color_1, label='Trouw', linewidth = 3.5, markeredgewidth = 7.0)
+	lines = plt.plot(years, trouw_similarity, linestyle='solid', color=color_1, label='Trouw', linewidth = 4.0, markeredgewidth = 7.5)
 	plt.setp(lines, marker = 's')
 	if args.avg:
-		lines = plt.plot(years, volkskrant_average_similarity, linestyle='dashed', color=color_2, label='Volkskrant average', linewidth = 2.0)
-		lines = plt.plot(years, trouw_average_similarity, linestyle='dashed', color=color_1, label='Trouw average', linewidth = 2.0)
+		lines = plt.plot(years, volkskrant_average_similarity, linestyle='dashed', color=color_2, label='Volkskrant average', linewidth = 3.0)
+		lines = plt.plot(years, trouw_average_similarity, linestyle='dashed', color=color_1, label='Trouw average', linewidth = 3.0)
 	plt.legend(framealpha=0.5)
 	plt.ylim(0,1)
 	plt.xlim(years[0]-.5,years[-1]+.5)
@@ -150,10 +150,10 @@ if args.word:
 	plt.show()
 
 	plt.rcParams.update({'font.size': 29})
-	fig = plt.figure(1, figsize=(36,8), tight_layout = True)
-	lines = plt.plot(years, volkskrant_frequency, linestyle='solid', color=color_2, label='Volkskrant', linewidth = 3.5, markeredgewidth = 7.0)
+	fig = plt.figure(1, figsize=(25.58,8), tight_layout = True)
+	lines = plt.plot(years, volkskrant_frequency, linestyle='solid', color=color_2, label='Volkskrant', linewidth = 4.0, markeredgewidth = 7.5)
 	plt.setp(lines, marker = '.')
-	lines = plt.plot(years, trouw_frequency, linestyle='solid', color=color_1, label='Trouw', linewidth = 3.5, markeredgewidth = 7.0)
+	lines = plt.plot(years, trouw_frequency, linestyle='solid', color=color_1, label='Trouw', linewidth = 4.0, markeredgewidth = 7.5)
 	plt.setp(lines, marker = 's')
 	plt.legend(framealpha=0.5)
 	plt.ylim(0,)
